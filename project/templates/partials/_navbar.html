@@ -1,0 +1,23 @@
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: black; padding: 10px;" >
+    <a class="navbar-brand" href="{% url 'index' %}" style="color: white;">Projeto de Inovação</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+            {% if user.is_authenticated %}
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'home' %}" style="color: white;"><b>Home</b></a>  
+                </li>
+            
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'logout' %}" style="color: white;"><b>Logout</b></a>
+                </li>
+            {% else %}
+                <li class="nav-item">
+                    <button class="nav-link btn" data-bs-toggle="modal" data-bs-target="#exampleModal" style="color: white;"><b>Login</b></button>
+                </li>
+            {% endif %}
+        </ul>
+    </div>
+</nav>
