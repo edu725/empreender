@@ -3,7 +3,7 @@
 {% block content %}
 
 <div>
-  <img class="d-block w-100" src="{% static 'assets/img/empreender.png' %}" alt="...">
+  <img class="d-block w-100" src="{% static 'assets/img/terno.jpg' %}" alt="...">
 </div>
 
 <div style="text-align: center; background-color: black; color: white;">
@@ -12,9 +12,13 @@
   </h1>
 </div>  
 
+  
 <div class="row">
-    {% include 'partials/_card.html' %}
-    {% include 'partials/_detail.html' %}
+  {% include 'partials/_card.html' %}
+  {% include 'partials/_detail.html' %}
 </div>
+  
+
+
 {% include "partials/_footer.html" %}
 {% endblock %}

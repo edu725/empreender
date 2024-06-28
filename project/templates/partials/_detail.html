@@ -1,6 +1,6 @@
 {% for item in games %}
 <!-- Modal -->
-<div class="modal fade" id="{{item.game.id}}" tabindex="-1" aria-labelledby="{{item.game.id}}" aria-hidden="true">
+<div class="modal fade" id="{{item.game.id}}" tabindex="-1" aria-labelledby="{{item.game.id}}" aria-hidden="true" style="overflow-y: hidden;">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -9,7 +9,7 @@
         </div>
         <div class="modal-body">
             <img class="card-img-top" src="{{ item.game.path.url }}" alt="{{ item.game.title }}">
-            <br>
+            
             <p>{{item.game.description}}</p>
         </div>      
       </div>

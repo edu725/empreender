@@ -11,21 +11,20 @@
     {% block script %}
     {% endblock %}
 </head>
-<body>
+<body style="overflow-x: hidden;">
     {% include "partials/_navbar.html" %}
     {% include "partials/_messages.html" %}
     
-    <div>
+    
         {% block content %}
         {% endblock %}
-    </div>
+    
     
 
     <script src="{% static 'assets/js/bootstrap.bundle.min.js' %}"></script>
     <!-- Button trigger modal -->
     
-    
-    
+
     
     
     {% include "partials/_register.html" %}

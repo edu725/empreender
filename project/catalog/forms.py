@@ -11,8 +11,8 @@ class ItemForm(forms.ModelForm):
             'description': "Descrição:",       
             }
         widgets = {
-            'title': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Title'}),
+            'title': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Título'}),
             'path': forms.ClearableFileInput(attrs={'class': 'form-control',}),
-            'description': forms.Textarea(attrs={'class': 'form-control', 'placeholder': 'Description'}),
+            'description': forms.Textarea(attrs={'class': 'form-control', 'placeholder': 'Descrição'}),
         }
 
