@@ -1,17 +1,26 @@
 <nav class="navbar navbar-expand-lg navbar-light" style="background-color: black; padding: 10px;" >
-    <a class="navbar-brand" href="{% url 'index' %}" style="color: white;">Projeto de Inovação</a>
+    <a class="navbar-brand" href="{% url 'index' %}" style="color: white; font-family: Georgia, 'Times New Roman', Times, serif;"><b>StartupSuccess</b></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
+    <div class="collapse navbar-collapse"  id="navbarNav">
+        <ul class="navbar-nav ms-auto" >
             {% if user.is_authenticated %}
                 <li class="nav-item">
-                  <a class="nav-link" href="{% url 'home' %}" style="color: white;"><b>Home</b></a>  
+                    <a class="nav-link" href="{% url 'home' %}" style="color: white;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                            <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+                        </svg>
+                    </a>  
                 </li>
             
                 <li class="nav-item">
-                    <a class="nav-link" href="{% url 'logout' %}" style="color: white;"><b>Logout</b></a>
+                    <a class="nav-link" href="{% url 'logout' %}" style="color: white;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                            <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+                        </svg>
+                    </a>
                 </li>
             {% else %}
                 <li class="nav-item">
@@ -21,3 +30,4 @@
         </ul>
     </div>
 </nav>
+
