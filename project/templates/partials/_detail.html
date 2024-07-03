@@ -3,15 +3,15 @@
 <div class="modal fade" id="{{item.game.id}}" tabindex="-1" aria-labelledby="{{item.game.id}}" aria-hidden="true" style="overflow-y: hidden;">
     <div class="modal-dialog">
       <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="{{item.game.id}}">{{ item.game.title }}</h1>
+        <div class="modal-header backcard">
+          <h1 class="modal-title fs-5 textcard" id="{{item.game.id}}">{{ item.game.title }}</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
-            <img class="card-img-top" src="{{ item.game.path.url }}" alt="{{ item.game.title }}">
-            
-            <p>{{item.game.description}}</p>
-        </div>      
+        <div class="backcard">
+            <img class="card-img-top"  src="{{ item.game.path.url }}" alt="{{ item.game.title }}">
+            <p class="textcard">{{item.game.description}}</p>
+        </div>
+              
       </div>
     </div>
 </div>

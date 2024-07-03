@@ -1,8 +1,13 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-<div style="text-align: center; font-size: 25px; color: white; background-color: black;">
-  <p class="mb-0 pb-3" style="font-family: Georgia, 'Times New Roman', Times, serif;"><b>Home</b></p>
+<div class="conteiner" style="text-align: center; font-size: 25px; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);">
+  <div>
+    <div>
+      <img src="{% static 'assets/img/vv.svg' %}" width="50px" height="50px" fill="white" alt="">
+      <p class="mb-0 pb-3" style="font-family: Georgia, 'Times New Roman', Times, serif;"><b>Home</b></p>
+    </div>
+  </div>
 </div>
 <div>
   <img class="d-block w-100 h-1000" src="{% static 'assets/img/terno.jpg' %}" alt="...">
@@ -17,8 +22,7 @@
   {% include 'partials/_card.html' %}
   {% include 'partials/_detail.html' %}
 </div>
-<hr style="color: white;">
-<div class="conteiner p-5">
+<div class="conteiner p-5" style="background-color: rgba(204, 204, 204, 0.534);">
   <div class="row" style="margin-right: 0%; margin-left: 0%;">
     <div class="col-lg-6" >
       <img class="img-fluid" src="{% static 'assets/img/terno2.jpg' %}" alt="">
