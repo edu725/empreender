@@ -1,42 +1,31 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-<div class="conteiner" style="text-align: center; font-size: 25px; color: rgb(0, 0, 0); background-color: rgb(255, 255, 255);">
-  <div>
-    <div>
-      <img src="{% static 'assets/img/vv.svg' %}" width="50px" height="50px" fill="white" alt="">
-      <p class="mb-0 pb-3" style="font-family: Georgia, 'Times New Roman', Times, serif;"><b>Home</b></p>
-    </div>
-  </div>
-</div>
-<div>
+
   <img class="d-block w-100 h-1000" src="{% static 'assets/img/terno.jpg' %}" alt="...">
 </div>
-<div style="text-align: center;  background-color: rgb(0, 0, 0); color: rgb(255, 255, 255);">
+<div style="text-align: center;  background-color: #A2AEB6; color: #181A1D;">
   <h1 class="pb-3 pt-3" style="font-family: Georgia, 'Times New Roman', Times, serif;margin-bottom: 0%;">
-    Empreendorismo
+    Conteúdo
   </h1>
-</div>
-
-<div class="row" style="margin-right: 0%; margin-left: 0%; background-color: black;">
-  {% include 'partials/_card.html' %}
-  {% include 'partials/_detail.html' %}
-</div>
+  <div class="row" style="margin-right: 0%; margin-left: 0%;">
+    {% include 'partials/_card.html' %}
+    {% include 'partials/_detail.html' %}
+  </div>
+</div>  
 <div class="conteiner p-5" style="background-color: rgba(204, 204, 204, 0.534);">
   <div class="row" style="margin-right: 0%; margin-left: 0%;">
     <div class="col-lg-6" >
-      <img class="img-fluid" src="{% static 'assets/img/terno2.jpg' %}" alt="">
+      <img class="img-fluid rounded" src="{% static 'assets/img/terno2.jpg' %}" alt="">
     </div>
     <div class="col-lg-6">
-      <p style="font-size: 20px; font-style: italic; margin-top: 100px;">
-        <b>
-          Empreender é muito mais do que iniciar um negócio; é um ato de coragem, inovação e visão. 
-          O empreendedor enxerga oportunidades onde outros veem obstáculos, e transforma ideias em realidade através de esforço, 
-          persistência e criatividade. <br> No caminho do empreendedorismo, desafios são inevitáveis, 
-          mas cada obstáculo superado é uma lição valiosa que fortalece e capacita para o próximo passo.
-        </b>
+      <p style="font-size: 20px; font-family: 'Montserrat'; margin-top: 100px;">        
+        Empreender é muito mais do que iniciar um negócio; é um ato de coragem, inovação e visão. 
+        O empreendedor enxerga oportunidades onde outros veem obstáculos, e transforma ideias em realidade através de esforço, 
+        persistência e criatividade. <br> No caminho do empreendedorismo, desafios são inevitáveis, 
+        mas cada obstáculo superado é uma lição valiosa que fortalece e capacita para o próximo passo.
       </p>
-    </div>
+    </div>  
   </div>
 </div>
   
