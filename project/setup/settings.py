@@ -82,10 +82,10 @@ WSGI_APPLICATION = 'setup.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'mauricio',
+        'NAME': 'venturevision',
         'USER': 'root',
-        'PASSWORD': '',
-        'HOST': '127.0.0.1',
+        'PASSWORD': '12345678',
+        'HOST': 'localhost',
         'PORT': '3306',
     }
 }
