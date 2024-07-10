@@ -1,9 +1,9 @@
 {% load static %}
 {% for item in games %}
-<div class="col-md-4 col-sm-6 col-lg-3 m-5">
+<div class="col-lg-3">
     <a data-bs-toggle="modal" data-bs-target="#{{item.game.id}}">
-        <div class="card">
-            <img class="card-img-top img-fluid" src="{{ item.game.path.url }}" alt="{{ item.game.title }}">
+        <div class="card" >
+            <img class="card-img-top"  src="{{ item.game.path.url }}" alt="{{ item.game.title }}">
             <div class="card-body backcard">
                 <h4 class="card-title text-center textcard" style="color: #181A1D;">{{ item.game.title }}</h4>        
             </div>

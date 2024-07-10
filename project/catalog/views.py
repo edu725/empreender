@@ -4,6 +4,8 @@ from .forms import *
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 
+
+
 @login_required
 def home(request):
     games = Item.objects.all()
@@ -54,3 +56,10 @@ def delete_item(request, item_id):
         messages.success(request, 'Card deletado com sucesso!')
         return redirect('home')
     return render(request, 'catalog/delete_item.html', {'game': game})
+
+@login_required
+def comment_item(request):
+    if request.method == 'POST':
+        content = request.POST.get('content')
+        Comment.objects.create(user=request.user, content=content)
+    return redirect('index')

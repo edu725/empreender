@@ -1,0 +1,21 @@
+<div>
+    <p style="text-align: center; font-family: Montserrat; font-size: 30px; "> <strong>Duvidas ?</strong> </p>
+    <form method="post" action="{% url 'comment_item'%}">
+      {% csrf_token %}
+      <div class="input-group mb-3 p-3">
+          <input type="text" class="form-control"  name="content" placeholder="Adicionar duvida" aria-label="Adicionar duvida" aria-describedby="button-addon2">
+          <button class="btn btn-outline-secondary" type="submit">Enviar</button>
+      </div>
+    </form>
+    <div class="row m-4">
+        <h5>Duvidas:</h5>
+        {% for comment in item.comments %}
+            <div class="card mt-2">
+                <div class="card-body">
+                    <p class="card-text">{{ comment.content }}</p>
+                    <p class="card-text"><small class="text-muted">por {{ comment.user.username }}</small></p>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>

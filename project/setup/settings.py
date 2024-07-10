@@ -82,7 +82,7 @@ WSGI_APPLICATION = 'setup.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'venturevision',
+        'NAME': 'mauricio',
         'USER': 'root',
         'PASSWORD': '12345678',
         'HOST': 'localhost',
@@ -148,6 +148,7 @@ MESSAGE_TAGS = {
     messages.ERROR: 'danger',
     messages.SUCCESS: 'success'
 }
+
 
 
 #login url
