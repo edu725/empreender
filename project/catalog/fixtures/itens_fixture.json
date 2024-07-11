@@ -1,0 +1,39 @@
+[
+    {
+        "model": "catalog.item",
+        "pk": 1,
+        "fields": {
+            "title": "Mentoria",
+            "path": "img/2024/07/10/mentoria.jpg",
+            "description": "Mentoria é uma expressão usada no meio empresarial e reconhecida como um dos melhores métodos para desenvolver uma pessoa na vida ou no trabalho.Em sua forma básica tem um mentor que contribui para a pessoa mentoria, compartilhando conhecimentos e experiências cuja função é prestar uma orientação ao  mentorado no seu desenvolvimento, enquanto o mentorado está em um processo de aprendizagem e que necessita de orientação para vencer seus principais desafios."
+        }
+    },
+    {
+        "model": "catalog.item",
+        "pk": 2,
+        "fields": {
+            "title": "Pitch",
+            "path": "img/2024/07/10/pitch.jpg",
+            "description": "Pitch é uma breve apresentação curta e direta sobre um projeto ou empresa, tendo sua finalidade efetiva que convença a importância do produto que está sendo empreendido.Primeiramente deve começar apresentando de forma direta, em seguida mostrar a solução do problema anterior e indicar os diferenciais do seu serviço em poucas palavras de forma que entendam, já a finalização ofereça uma amostra de seu serviço, sendo importante fechar sua argumentação, para que o ouvinte seja influenciado a tomar uma decisão."
+        }
+    },
+    {
+        "model": "catalog.item",
+        "pk": 3,
+        "fields": {
+            "title": "Startup",
+            "path": "img/2024/07/10/startup.jpg",
+            "description": "Startup é uma empresa em fase inicial que busca desenvolver um modelo de negócio inovador e escalável, geralmente envolvendo tecnologia. As startups focam em criar produtos ou serviços únicos, muitas vezes em mercados emergentes ou inexplorados. Elas operam em condições de alta incerteza e costumam buscar investimentos para crescer rapidamente e alcançar um grande mercado."
+        }
+    },
+    {
+        "model": "catalog.item",
+        "pk": 4,
+        "fields": {
+            "title": "Protótipo",
+            "path": "img/2024/07/10/prototipo.jpg",
+            "description": "Protótipo é uma versão preliminar de um produto ou sistema, criada para testar e validar ideias e funcionalidades antes de sua produção final. Ele permite que designers e desenvolvedores identifiquem problemas, façam ajustes e melhorem o design com base no feedback dos usuários. Prototipagem pode envolver modelos físicos, maquetes digitais, ou até mesmo simulações interativas."
+        }
+    }
+
+]

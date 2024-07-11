@@ -4,12 +4,12 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header backcard">
-          <h1 class="modal-title fs-5 textcard" id="{{item.game.id}}">{{ item.game.title }}</h1>
+          <h1 class="modal-title fs-5 textcard" id="{{item.game.id}}"><b>{{ item.game.title }}</b></h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="backcard">
             <img class="card-img-top"  src="{{ item.game.path.url }}" alt="{{ item.game.title }}">
-            <p class="textcard text-center pt-3">{{item.game.description}}</p>
+            <p class="textcard text-start p-3" style="font-family: 'Montserrat';">{{item.game.description}}</p>
         </div>
               
       </div>

@@ -13,14 +13,16 @@ def home(request):
 
 def index(request):
     games = Item.objects.all()
+    content = Item.objects.all()
     data_games = []
     for game in games:
         data_games.append(
             {
                 'game': game,
+                "comments": Comment.objects.all()
             }
         )
-    return render(request, 'catalog/index.html', {'games': data_games})
+    return render(request, 'catalog/index.html', {'games': data_games, 'comments':  content})
 
 
 @login_required
