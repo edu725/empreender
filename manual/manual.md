@@ -10,9 +10,7 @@
    4. Adicionar Cards
    5. Editar Cards
    6. Excluir cards
-   7. Adicionar Review
 - Restrição
-- Suporte
 
 # O Sistema
 
@@ -40,3 +38,28 @@ O sistema Venture Vision tem como finalidade apresentar taticas empresarias, par
 
 ## - Cadastro
 ![cadastro](<manual-img-cadastro.png>)
+
+## - Login
+
+![login](<manual-img-login.png>)
+
+## - Logout
+
+![logout](<manual-img-logout.png>)
+
+## - Adicionar Cards
+
+![addcard](<manual-img-addcard.png>)
+
+## - Editar Cards
+
+![editarcard](<manual-img-editarcard.png>)
+
+## - Excluir Cards
+
+![excluircards](<manual-img-excluircards.png>)
+
+# Restrições
+
+O sistema so permite adicionar, editar e remover cards a contas logadas no site.
+
