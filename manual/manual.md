@@ -1,3 +1,6 @@
+![sapcelogo](./img/logo.png)
+
+
 # Venture Vision - Documentação Geral 
 - O Sistema
 - Requerimentos mínimos
@@ -37,29 +40,41 @@ O sistema Venture Vision tem como finalidade apresentar taticas empresarias, par
 # Principais funções
 
 ## - Cadastro
-![cadastro](<manual-img-cadastro.png>)
+![cadastro](./img/cadastro.png)
+
+Opção feita para o cadastro do usuário, necessitando de email, username, senha e confirmação da senha.
 
 ## - Login
 
-![login](<manual-img-login.png>)
+![login](./img/login.png)
+
+Opção feita para o login do usuário, com campos de inserção do email e da senha.
 
 ## - Logout
 
-![logout](<manual-img-logout.png>)
+![logout](./img/logout.png)
+
+Botão para o logout do usuário.
 
 ## - Adicionar Cards
 
-![addcard](<manual-img-addcard.png>)
+![addcard](./img/addcard.png)
+
+Aba para adição de cards, com campos obrigatórios da imagem, título e conteúdo.
 
 ## - Editar Cards
 
-![editarcard](<manual-img-editarcard.png>)
+![editarcard](./img/editarcard.png)
+
+Aba para a edição dos cards.
 
 ## - Excluir Cards
 
-![excluircards](<manual-img-excluircards.png>)
+![excluircards](./img/excluircards.png)
+
+Botão para exclusão de cards.
 
 # Restrições
 
-O sistema so permite adicionar, editar e remover cards a contas logadas no site.
+O sistema so permite adicionar, editar e remover cards a conta logada no site.
 
