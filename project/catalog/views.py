@@ -13,16 +13,14 @@ def home(request):
 
 def index(request):
     games = Item.objects.all()
-    content = Item.objects.all()
     data_games = []
     for game in games:
         data_games.append(
             {
                 'game': game,
-                "comments": Comment.objects.all()
             }
         )
-    return render(request, 'catalog/index.html', {'games': data_games, 'comments':  content})
+    return render(request, 'catalog/index.html', {'games': data_games})
 
 
 @login_required
@@ -58,10 +56,3 @@ def delete_item(request, item_id):
         messages.success(request, 'Card deletado com sucesso!')
         return redirect('home')
     return render(request, 'catalog/delete_item.html', {'game': game})
-
-@login_required
-def comment_item(request):
-    if request.method == 'POST':
-        content = request.POST.get('content')
-        Comment.objects.create(user=request.user, content=content)
-    return redirect('index')
